@@ -127,14 +127,10 @@ function characterGreeting() {
     duration: 0.1,
   });
 
-  tl.to(
-    "#hi-character",
-    {
-      y: 135,
-      x: 265,
-      duration: 0.7,
-      ease: "power1.in",
-    },
-    "<",
-  );
+  tl.to("#hi-character", {
+    y: 135,
+    x: 265,
+    duration: 0.7,
+    ease: "power1.in",
+  });
 }
