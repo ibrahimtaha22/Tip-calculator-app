@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="character-wrapper">
+      <div class="character" id="hi-character">👋</div>
+    </div>
+    <main class="container">
+      <section class="left-section">
+        <div class="bill_box">
+          <label class="bill-label" for="billinput">Bill</label>
+          <input
+            class="bill-input"
+            placeholder="100"
+            type="number"
+            name="bill"
+            id="billinput"
+          />
+        </div>
+        <div class="tip_box">
+          <label class="tip-label"> Select Tip %</label>
+          <div class="tip-select-box">
+            <button
+              class="tip-button"
+              type="button"
+              value="0.05"
+              id="fivepercent"
+            >
+              5%
+            </button>
+            <button
+              class="tip-button"
+              type="button"
+              value="0.1"
+              id="tenpercent"
+            >
+              10%
+            </button>
+            <button
+              class="tip-button"
+              type="button"
+              value="0.15"
+              id="fifteenpercent"
+            >
+              15%
+            </button>
+            <button
+              class="tip-button"
+              type="button"
+              value="0.25"
+              id="fivetwinypercent"
+            >
+              25%
+            </button>
+            <button
+              class="tip-button"
+              type="button"
+              value="0.5"
+              id="fiftypercent"
+            >
+              50%
+            </button>
+            <input
+              class="tip-custom-input"
+              type="number"
+              name="Custom"
+              id="inputcustom"
+              placeholder="Custom% "
+            />
+          </div>
+        </div>
+        <div class="people_box">
+          <div
+            class="label-wrapper"
+            style="display: flex; justify-content: space-between"
+          >
+            <label class="people-label" for="peopleinput"
+              >Number of People</label
+            >
+            <span id="error-msg" style="color: red; opacity: 0; font-size: 12px"
+              >Can't be zero</span
+            >
+          </div>
+          <input
+            class="people-input"
+            type="number"
+            name="people"
+            id="peopleinput"
+            placeholder="5"
+          />
+        </div>
+      </section>
+      <section class="right-section">
+        <div class="results-section">
+          <div>
+            <div class="tip-amount">Tip Amount <br /><span>/ person</span></div>
+            <output class="tip-result">0.00 $</output>
+          </div>
+
+          <div>
+            <div class="total-amount">Total <br /><span>/ person</span></div>
+            <output name="totalresult">0.00 $</output>
+          </div>
+        </div>
+        <div class="reset-section">
+          <button class="reset-button" name="reset" type="button">RESET</button>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/ibrahimtaha22">Hema Taha</a>.
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  </body>
+</html>
