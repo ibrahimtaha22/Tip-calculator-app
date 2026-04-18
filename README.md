@@ -22,9 +22,9 @@ JavaScript: To handle the application logic and real-time result calculations.
 Flexbox & CSS Grid: Used for a precise and flexible layout.
 
 Links
-Live Site URL: [Add your live site URL here]
+Live Site URL: [https://ibrahimtaha22.github.io/Tip-calculator-app/]
 
-Solution URL (GitHub): [Add your repository URL here]
+Solution URL (GitHub): [https://github.com/ibrahimtaha22]
 
 What I learned
 Through this project, I practiced several key frontend skills:
